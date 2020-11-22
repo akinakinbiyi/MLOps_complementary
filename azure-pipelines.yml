@@ -34,7 +34,7 @@ steps:
 - script: |
    sed -i 's#"subscription_id": "<>"#"subscription_id": "$(subscriptionid)"#g' aml_config/config.json
    
-  displayName: 'replace subscription value'
+  displayName: 'Trainings'
 
 - script: 'pytest tests/unit/data_test.py'
   displayName: 'Data Quality Check'
